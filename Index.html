@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alarm_page</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body class="bg-dark">
+    <header></header>
+    <main>
+      <div class="container mt-3">
+        <!-- List of all alarms -->
+        <section class="alarm-section my-1">
+          <div class="alarm bg-warning text-right">
+            <p>هشدار اول</p>
+            <form action="" class="row">
+              <div class="form-group col-8 d-flex">
+                <label for="portion" class=" align-self-center">نام سهم:</label>
+                <select name="portion" id="Portion" class="form-control">
+                  <option value="">ایران خودرو</option>
+                </select>
+              </div>
+              <div class="form-group col-8 d-flex">
+                <label for="Price" class="align-self-center">قیمت:</label>
+                <input
+                  type="number"
+                  name="Price"
+                  id="Price"
+                  class="form-control"
+                />
+              </div>
+              <div class="form-check p-0 col-2">
+                <label class="form-check-label pl-2" for="More">بیشتر</label>
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="MoreOrLess"
+                  id="More"
+                />
+              </div>
+              <div class="form-check p-0 col-2">
+                <label class="form-check-label pl-2" for="Less">کمتر</label>
+                <input
+                  class="form-check-input d-sm-block"
+                  type="radio"
+                  name="MoreOrLess"
+                  id="Less"
+                />
+                </div>
+                <div class="mb-1 mx-3">
+                    <button class="btn btn-success btn-sm">ثبت</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </section>
+      </div>
+    </main>
+    <!-- Bootstrap CDN -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <!-- End Bootstrap CDN -->
+  </body>
+</html>

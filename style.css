@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  direction: rtl;
+}
+
+/*========== main */
+/* alarm section */
+
+.alarm-section {
+  direction: rtl;
+}
+
+.alarm .form-group label {
+  width: 15vw;
+  text-align: end;
+  margin-left: 10px;
+}
+
+.alarm {
+  /* background: rgb(212, 223, 143); */
+  border: solid black;
+  border-radius: 10px;
+}
