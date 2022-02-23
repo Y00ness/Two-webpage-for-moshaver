@@ -4,8 +4,34 @@
   direction: rtl;
 }
 
+:root {
+  --mainyellow: #fff323;
+  --mainorange: #ff5403;
+  --maingrey: #f7f7f7;
+  --maingreen: #95cd41;
+}
 /*========== main */
+
+main {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
 /* alarm section */
+
+.alarm-text {
+  border-bottom: #ff5403 2px solid;
+  border-radius: 15px;
+  width: 25%;
+  margin: 0 auto;
+  padding-bottom: 5px;
+}
+
+.alarm-section {
+  width: 90%;
+  margin: auto;
+}
 
 .alarm-section {
   direction: rtl;
@@ -14,11 +40,54 @@
 .alarm .form-group label {
   width: 15vw;
   text-align: end;
-  margin-left: 10px;
+  padding-left: 10px;
 }
 
 .alarm {
-  /* background: rgb(212, 223, 143); */
+  background: var(--mainyellow);
   border: solid black;
   border-radius: 10px;
+  font-weight: 700;
+  box-shadow: 0px 0px 15px var(--maingrey);
+  position: relative;
+}
+
+/* form */
+
+.input {
+  background: var(--mainyellow);
+  border: none;
+  border-bottom: var(--maingrey) solid;
+  width: 50%;
+  outline: none;
+  transition: width 0.4s;
+  border-radius: 10px;
+  padding: 0 10px;
+}
+
+.input:focus {
+  background: var(--mainyellow);
+  /* border: none; */
+  width: 75%;
+  /* outline: none; */
+}
+.form-input-label {
+  width: 15%;
+  display: inline-block;
+  margin-bottom: 0;
+}
+.form-check-label {
+  width: 15%;
+}
+
+.form {
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+}
+
+.btn {
+  position: absolute;
+  bottom: 10px;
+  left: 25px;
 }

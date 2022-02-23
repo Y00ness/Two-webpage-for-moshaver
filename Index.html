@@ -16,53 +16,50 @@
   <body class="bg-dark">
     <header></header>
     <main>
-      <div class="container mt-3">
-        <!-- List of all alarms -->
-        <section class="alarm-section my-1">
-          <div class="alarm bg-warning text-right">
-            <p>هشدار اول</p>
-            <form action="" class="row">
-              <div class="form-group col-8 d-flex">
-                <label for="portion" class=" align-self-center">نام سهم:</label>
-                <select name="portion" id="Portion" class="form-control">
-                  <option value="">ایران خودرو</option>
-                </select>
-              </div>
-              <div class="form-group col-8 d-flex">
-                <label for="Price" class="align-self-center">قیمت:</label>
-                <input
-                  type="number"
-                  name="Price"
-                  id="Price"
-                  class="form-control"
-                />
-              </div>
-              <div class="form-check p-0 col-2">
-                <label class="form-check-label pl-2" for="More">بیشتر</label>
-                <input
-                  class="form-check-input"
-                  type="radio"
-                  name="MoreOrLess"
-                  id="More"
-                />
-              </div>
-              <div class="form-check p-0 col-2">
-                <label class="form-check-label pl-2" for="Less">کمتر</label>
-                <input
-                  class="form-check-input d-sm-block"
-                  type="radio"
-                  name="MoreOrLess"
-                  id="Less"
-                />
-                </div>
-                <div class="mb-1 mx-3">
-                    <button class="btn btn-success btn-sm">ثبت</button>
-                </div>
-              </div>
-            </form>
-          </div>
-        </section>
-      </div>
+      <!-- List of all alarms -->
+      <section class="alarm-section">
+        <div class="alarm text-right">
+          <p class="alarm-text text-center my-2">هشدار اول</p>
+          <form action="" class="d-flex flex-column">
+            <div class="form d-flex mt-1">
+              <label
+                for="portion"
+                class="form-input-label align-self-center text-left ml-3"
+                >نام سهم:</label
+              >
+              <select name="portion" id="Portion" class="input">
+                <option value="" selected hidden>سهم خود را انتخاب کنید</option>
+                <option value="" class="">ایران خودرو</option>
+                <option value="">ایران خودرو</option>
+              </select>
+            </div>
+            <div class="form d-flex mt-3 mb-0">
+              <label for="Price" class="form-input-label text-left ml-3"
+                >قیمت:</label
+              >
+              <input
+                type="text"
+                name="Price"
+                id="Price"
+                class="input"
+                placeholder="مقدار مطلوب را وارد کنید"
+              />
+            </div>
+            <div class="my-3">
+              <label class="form-check-label pl-2 text-left" for="More"
+                >بیشتر</label
+              >
+              <input class="" type="radio" name="MoreOrLess" id="More" />
+              <label class="form-check-label pl-2 text-left" for="Less"
+                >کمتر</label
+              >
+              <input class="" type="radio" name="MoreOrLess" id="Less" />
+            </div>
+            <button class="btn btn-success btn-sm">ثبت</button>
+          </form>
+        </div>
+      </section>
+      <!--End List of all alarms -->
     </main>
     <!-- Bootstrap CDN -->
     <script
