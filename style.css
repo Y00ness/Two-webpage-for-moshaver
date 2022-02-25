@@ -2,6 +2,9 @@
   margin: 0;
   padding: 0;
   direction: rtl;
+  font-family: "IranianSans";
+  /* font-weight: 700; */
+  font-style: normal;
 }
 
 :root {
@@ -21,11 +24,14 @@ main {
 /* alarm section */
 
 .alarm-text {
-  border-bottom: #ff5403 2px solid;
+  border-bottom: black 1px solid;
+  border-top: var(--maingrey) solid 1px;
   border-radius: 15px;
-  width: 25%;
+  width: 20%;
   margin: 0 auto;
-  padding-bottom: 5px;
+  padding-left: 10px;
+  font-size: 1.2rem;
+  /* padding: 5px 0px; */
 }
 
 .alarm-section {
@@ -57,19 +63,18 @@ main {
 .input {
   background: var(--mainyellow);
   border: none;
-  border-bottom: var(--maingrey) solid;
+  border-bottom: var(--maingrey) solid 1px;
+  border-top: black solid 1px;
   width: 50%;
   outline: none;
   transition: width 0.4s;
   border-radius: 10px;
-  padding: 0 10px;
+  padding: 5px 5px;
 }
 
 .input:focus {
   background: var(--mainyellow);
-  /* border: none; */
   width: 75%;
-  /* outline: none; */
 }
 .form-input-label {
   width: 15%;
@@ -83,11 +88,12 @@ main {
 .form {
   display: flex;
   align-items: center;
-  /* justify-content: center; */
 }
 
 .btn {
   position: absolute;
   bottom: 10px;
   left: 25px;
+  border-radius: 25%;
+  /* padding: 10px; */
 }

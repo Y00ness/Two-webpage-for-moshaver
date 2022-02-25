@@ -5,13 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Alarm_page</title>
+    <!--Bootstrap CDN-->
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
       integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
       crossorigin="anonymous"
     />
+    <!--Custom CSS style-->
     <link rel="stylesheet" href="./style.css" />
+    <!--Font stylesheet-->
+    <link
+      rel="stylesheet"
+      media="screen"
+      href="https://fontlibrary.org//face/iranian-sans"
+      type="text/css"
+    />
   </head>
   <body class="bg-dark">
     <header></header>
@@ -19,7 +28,7 @@
       <!-- List of all alarms -->
       <section class="alarm-section">
         <div class="alarm text-right">
-          <p class="alarm-text text-center my-2">هشدار اول</p>
+          <p class="alarm-text text-center my-2">انتخاب هشدار</p>
           <form action="" class="d-flex flex-column">
             <div class="form d-flex mt-1">
               <label
@@ -27,7 +36,7 @@
                 class="form-input-label align-self-center text-left ml-3"
                 >نام سهم:</label
               >
-              <select name="portion" id="Portion" class="input">
+              <select name="portion" id="Portion" class="input" required>
                 <option value="" selected hidden>سهم خود را انتخاب کنید</option>
                 <option value="" class="">ایران خودرو</option>
                 <option value="">ایران خودرو</option>
@@ -43,19 +52,21 @@
                 id="Price"
                 class="input"
                 placeholder="مقدار مطلوب را وارد کنید"
+                required
+                autocomplete="off"
               />
             </div>
             <div class="my-3">
               <label class="form-check-label pl-2 text-left" for="More"
                 >بیشتر</label
               >
-              <input class="" type="radio" name="MoreOrLess" id="More" />
+              <input type="radio" name="MoreOrLess" id="More" checked />
               <label class="form-check-label pl-2 text-left" for="Less"
                 >کمتر</label
               >
               <input class="" type="radio" name="MoreOrLess" id="Less" />
             </div>
-            <button class="btn btn-success btn-sm">ثبت</button>
+            <button class="btn btn-dark btn-sm">ثبت</button>
           </form>
         </div>
       </section>
