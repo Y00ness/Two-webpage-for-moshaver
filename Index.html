@@ -36,9 +36,27 @@
                 class="form-input-label align-self-center text-left ml-3"
                 >نام سهم:</label
               >
-              <select name="portion" id="Portion" class="input" required>
-                <option value="" selected hidden>سهم خود را انتخاب کنید</option>
-                <option value="" class="">ایران خودرو</option>
+              <select
+                name="portion"
+                id="Portion"
+                class="input"
+                required
+                onfocus="this.size=4;"
+                onblur="this.size=1;"
+                onchange="this.size=1; this.blur();"
+              >
+                <option class="portion-option-one" value="" selected hidden>
+                  سهم خود را انتخاب کنید
+                </option>
+                <option value="">ایران خودرو</option>
+                <option value="">ایران خودرو</option>
+                <option value="">ایران خودرو</option>
+                <option value="">ایران خودرو</option>
+                <option value="">ایران خودرو</option>
+                <option value="">ایران خودرو</option>
+                <option value="">ایران خودرو</option>
+                <option value="">ایران خودرو</option>
+                <option value="">ایران خودرو</option>
                 <option value="">ایران خودرو</option>
               </select>
             </div>
@@ -66,7 +84,7 @@
               >
               <input class="" type="radio" name="MoreOrLess" id="Less" />
             </div>
-            <button class="btn btn-dark btn-sm">ثبت</button>
+            <button class="btn btn-dark">ثبت</button>
           </form>
         </div>
       </section>
